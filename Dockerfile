@@ -13,9 +13,6 @@ RUN addgroup razor 2>/dev/null \
     && mkdir /home/razor/.razor && chown razor:razor /home/razor/.razor \
     && apk add --no-cache razor tzdata
 
-RUN cp /usr/share/zoneinfo/"$TZ" /etc/localtime \
-    && echo "$TZ" > /etc/timezone
-
 WORKDIR /home/razor/.razor
 COPY --chown=razor:razor razor-agent.conf .
 
