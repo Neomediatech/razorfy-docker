@@ -3,15 +3,13 @@ FROM alpine:3.12
 LABEL maintainer="Dario <docker-dario@neomediatech.it>"
 
 ENV VERSION=2.85-r9 \
-    TZ=Europe/Rome \
     OS=alpine \
-    LANG=it_IT.utf8 \
     SERVICE=razorfy
 
 RUN addgroup razor 2>/dev/null \
     && adduser -D --gecos "razor antispam" --ingroup razor razor 2>/dev/null \
     && mkdir /home/razor/.razor && chown razor:razor /home/razor/.razor \
-    && apk add --no-cache razor tzdata
+    && apk add --no-cache razor
 
 WORKDIR /home/razor/.razor
 COPY --chown=razor:razor razor-agent.conf .
