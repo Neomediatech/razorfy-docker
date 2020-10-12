@@ -1,10 +1,15 @@
 FROM alpine:3.12
 
-LABEL maintainer="Dario <docker-dario@neomediatech.it>"
-
 ENV VERSION=2.85-r9 \
     OS=alpine \
-    SERVICE=razorfy
+    SERVICE=razorfy \
+    NAME=razorfy-docker
+
+LABEL maintainer="Dario <docker-dario@neomediatech.it>" \ 
+      org.label-schema.version=$VERSION \
+      org.label-schema.vcs-type=Git \
+      org.label-schema.vcs-url=https://github.com/Neomediatech/${NAME} \
+      org.label-schema.maintainer=Neomediatech
 
 RUN addgroup razor 2>/dev/null \
     && adduser -D --gecos "razor antispam" --ingroup razor razor 2>/dev/null \
