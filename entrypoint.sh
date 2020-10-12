@@ -15,4 +15,4 @@ echo "export RAZORFY_BINDADDRESS=0.0.0.0" > /home/"$NME"/.profile
 
 echo "Starting razorfy at $(date +'%x %X')"
 echo "Changing to user $NME"
-su -c '/usr/local/bin/razorfy.pl' - "$NME"
+su -c '/razorfy.pl' - "$NME"
