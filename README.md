@@ -4,7 +4,7 @@ Alpine Linux based image for razorfy rspamd helper, taken from a16bitsysop/razor
 RAZORFY_BINDADDRESS is already set to 0.0.0.0 to listen to all interfaces, this is done in the razor .profile file.
 
 ## Environment Variables
-| Name                | Desription                                             | Default   |
+| Name                | Description                                            | Default   |
 | ------------------- | ------------------------------------------------------ | --------- |
 | RAZORFY_BINDPORT    | Port that razorfy listens on                           | 11342     |
 | RAZORFY_MAXTHREADS  | Maximum numbers of threads to use                      | 2000      |
