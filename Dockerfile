@@ -1,7 +1,6 @@
-FROM alpine:3.12
+FROM alpine:3.22
 
-ENV VERSION=2.85-r9 \
-    OS=alpine \
+ENV OS=alpine \
     SERVICE=razorfy \
     NAME=razorfy-docker
 
