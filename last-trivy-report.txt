@@ -1,14 +1,2 @@
 -----------------------------------
-gio 24 lug 2025, 20:13:36, CEST --- ghcr.io/neomediatech/razorfy:latest
-
-Report Summary
-
-┌─────────────────────────────────────────────────────┬────────┬─────────────────┬─────────┐
-│                       Target                        │  Type  │ Vulnerabilities │ Secrets │
-├─────────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
-│ ghcr.io/neomediatech/razorfy:latest (alpine 3.22.1) │ alpine │        0        │    -    │
-└─────────────────────────────────────────────────────┴────────┴─────────────────┴─────────┘
-Legend:
-- '-': Not scanned
-- '0': Clean (no security findings detected)
-
+gio 24 lug 2025, 20:16:05, CEST --- ghcr.io/neomediatech/razorfy:latest NOT SCANNED

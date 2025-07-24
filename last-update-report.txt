@@ -1,1 +1,1 @@
-gio 24 lug 2025, 20:13:36, CEST --- ghcr.io/neomediatech/razorfy:latest UPDATED (image build needed: true)
+gio 24 lug 2025, 20:16:05, CEST --- ghcr.io/neomediatech/razorfy:latest not-needed (image build needed: false)
